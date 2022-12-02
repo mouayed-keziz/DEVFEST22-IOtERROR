@@ -1,4 +1,4 @@
-package com.capacitortest.apptest;
+package com.userapp.devfest22ioterror;
 
 import com.getcapacitor.BridgeActivity;
 

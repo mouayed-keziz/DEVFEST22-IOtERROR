@@ -1,4 +1,5 @@
 import { Button, Checkbox, PasswordInput, Stack, TextInput } from "@mantine/core";
+import { Link } from "react-router-dom";
 import logo_text_linear from "../assets/logo_text_linear.svg"
 export default function Register() {
     return (
@@ -42,13 +43,15 @@ export default function Register() {
                 />
             </Stack>
 
-            <Button
-                radius="md"
-                size="lg"
-                sx={{ width: "90%" }}>
-                Log in
-            </Button>
-
+            <Link to="/login" style={{
+                textDecoration: "none",
+            }}>
+                <Button
+                    radius="md"
+                    size="lg">
+                    CREATE AN ACCOUNT
+                </Button>
+            </Link>
         </Stack>
 
     );

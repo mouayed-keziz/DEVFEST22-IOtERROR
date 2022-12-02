@@ -60,3 +60,8 @@ cd backend
 npm install
 npm start
 ```
+
+
+
+
+`AI-models branch has all trained models used in the system`

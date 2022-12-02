@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import SmartBin from "./pages/SmartBin";
 import Offers from "./pages/Offers";
 import Account from "./pages/Account";
+import Parking from "./pages/Parking";
 export default function App() {
   return (
     <Router>
@@ -16,7 +17,7 @@ export default function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/app" element={<NavBar />} >
           <Route path="home" element={<Home />} />
-          <Route path="parking" element={<div>Profile</div>} />
+          <Route path="parking" element={<Parking />} />
           <Route path="smartbin" element={<SmartBin />} />
           <Route path="offers" element={<Offers />} />
           <Route path="account" element={<Account />} />

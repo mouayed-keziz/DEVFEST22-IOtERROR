@@ -1,7 +1,9 @@
 import { Avatar, Center, Divider, Group, Space, Stack, Text, UnstyledButton } from "@mantine/core";
 import { IconArrowLeft, IconChevronLeft, IconChevronRight, IconEdit, IconInfoCircle, IconLogout, IconPencil, IconUserPlus } from "@tabler/icons";
+import { useNavigate } from "react-router-dom";
 import bcg from "../assets/accountBackground.svg"
 export default function Account() {
+    const navigate = useNavigate();
     return (
         <div style={{
             width: "100%",
@@ -13,7 +15,10 @@ export default function Account() {
                 backgroundColor: "#FFFFFF",
                 opacity: 0.3,
                 borderRadius: "10px",
-            }}>
+            }}
+                onClick={() => {
+                    navigate("/app/home");
+                }}>
                 <IconChevronLeft
                     size={48}
                     strokeWidth={2}

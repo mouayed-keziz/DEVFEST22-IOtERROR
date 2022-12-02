@@ -3,6 +3,7 @@ import logoNoText from "../assets/logo_no_text.svg";
 import logoText from "../assets/logo_with_text.svg";
 import { randomId, useTimeout } from '@mantine/hooks';
 import { useNavigate } from "react-router-dom";
+import { Stack } from "@mantine/core";
 
 
 export default function Enter() {
@@ -17,6 +18,8 @@ export default function Enter() {
         start1();
     }, []);
     return (
-        <img alt="logonotext" src={withText ? logoText : logoNoText} />
+        <Stack align={"center"} justify="center" style={{ width: "100%", height: "100vh" }}>
+            <img alt="logonotext" src={withText ? logoText : logoNoText} />
+        </Stack>
     );
 }
