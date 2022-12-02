@@ -21,6 +21,7 @@
 
 ```
 cd user-app
+npm install
 npx cap add android   # if ./android exists then there is no need to execute this
 npx cap sync android
 npx cap open android
@@ -38,7 +39,24 @@ npx cap open android
 
 ```
 cd garbage-collector-app
+npm install
 npx cap add android   # if ./android exists then there is no need to execute this
 npx cap sync android
 npx cap open android
+```
+
+
+<br/><br/>
+
+## application 3 : `backend` 
+#### `back`
+- log in
+- know the path to collect garbage from garbage canes that are full
+
+#### `run server`
+
+```
+cd backend
+npm install
+npm start
 ```

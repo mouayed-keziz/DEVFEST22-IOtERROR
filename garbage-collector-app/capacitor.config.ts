@@ -4,7 +4,7 @@ const config: CapacitorConfig = {
   appId: 'com.userapp.devfest22ioterror',
   appName: 'garbagecollectorapp',
   webDir: 'build',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
 };
 
 export default config;
