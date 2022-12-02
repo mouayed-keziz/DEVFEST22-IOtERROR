@@ -2,9 +2,9 @@ import { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
   appId: 'com.userapp.devfest22ioterror',
-  appName: 'userapp',
+  appName: 'garbagecollectorapp',
   webDir: 'build',
-  bundledWebRuntime: false,
+  bundledWebRuntime: false
 };
 
 export default config;
