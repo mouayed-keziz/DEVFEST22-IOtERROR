@@ -1,0 +1,5 @@
+0 Metal
+1 Plastic
+2 Paper
+3 Glass
+4 background
