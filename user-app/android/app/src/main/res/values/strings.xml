@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">app-test</string>
+    <string name="title_activity_main">app-test</string>
+    <string name="package_name">com.capacitortest.apptest</string>
+    <string name="custom_url_scheme">com.capacitortest.apptest</string>
+</resources>
