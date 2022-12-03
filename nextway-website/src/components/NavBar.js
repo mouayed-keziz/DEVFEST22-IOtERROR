@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import { createStyles, Header, Container, Group, Burger, Paper, Transition, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import logo from '../assets/logo.svg';
@@ -113,11 +112,11 @@ export default function NavBar() {
 
     return (
         <Header height={HEADER_HEIGHT} mb={120} className={classes.root}>
-            <Container className={classes.header}>
+            <Container size={"xl"} className={classes.header}>
                 <img alt="logo" src={logo} />
                 <Group spacing={5} className={classes.links}>
                     {items}
-                    <Button variant="gradient" gradient={{ from: '#24B4D5', to: '#31F6A9', deg: 45 }}>Let's Talk</Button>
+                    <Button radius={"md"} variant="gradient" gradient={{ from: '#24B4D5', to: '#31F6A9', deg: 45 }}>Let's Talk</Button>
                 </Group>
 
                 <Burger opened={opened} onClick={toggle} className={classes.burger} size="sm" />

@@ -6,7 +6,7 @@ import WhoAreWeSection from "./components/WhoAreWeSection"
 import OutLatestProductSection from "./components/OutLatestProductSection"
 import TechnologiesUsed from './components/TechogoliesUsed';
 import GetInTouch from './components/GetInTouch';
-
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <TechnologiesUsed />
         <GetInTouch />
       </Container>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { createStyles, Grid, Title } from "@mantine/core";
+import { createStyles, Grid } from "@mantine/core";
 
 const useStyles = createStyles((theme) => ({
     outlinedText: {

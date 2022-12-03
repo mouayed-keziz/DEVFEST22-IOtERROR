@@ -1,4 +1,4 @@
-import { Box, createStyles, Grid, Textarea, TextInput } from "@mantine/core";
+import { Box, Button, Center, createStyles, Grid, Textarea, TextInput } from "@mantine/core";
 import contactPhoto from "../assets/contact.png"
 const useStyles = createStyles((theme) => ({
     morphism: {
@@ -39,7 +39,7 @@ export default function GetInTouch() {
                 <br />
                 <Grid>
                     <Grid.Col span={12} sm={6}>
-                        <img width={"100%"} alt="contact-photo" src={contactPhoto} />
+                        <img width={"100%"} alt="contact" src={contactPhoto} />
                     </Grid.Col>
                     <Grid.Col span={12} sm={6}>
                         <Box>
@@ -81,6 +81,9 @@ export default function GetInTouch() {
                                 autosize
                                 minRows={4}
                             />
+                            <Center>
+                                <Button radius={"md"} variant="gradient" gradient={{ from: '#24B4D5', to: '#31F6A9', deg: 45 }}>Send your message</Button>
+                            </Center>
                         </Box>
                     </Grid.Col>
                 </Grid>
