@@ -1,4 +1,6 @@
 import { createStyles, Grid } from "@mantine/core";
+import city from "../assets/city.png";
+import { useMediaQuery } from '@mantine/hooks';
 
 const useStyles = createStyles((theme) => ({
     outlinedText: {
@@ -24,17 +26,20 @@ const useStyles = createStyles((theme) => ({
 
 export default function HeroHeader() {
     const { classes } = useStyles();
+    const matches = useMediaQuery('(min-width: 768px)');
     return (
         <>
             <Grid>
                 <Grid.Col span={12} sm={5}>
-                    <p className={classes.bigText}><b className={classes.outlinedText}>Helpful </b>For <b className={classes.linearGradientText}>everyone</b></p>
+                    {matches && <><br /><br /></>}<p className={classes.bigText}><b className={classes.outlinedText}>Helpful </b>For <b className={classes.linearGradientText}>everyone</b></p>
                     <br />
                     <b>GAME CHANGER <b style={{ color: "#35D5A5" }}>SOLUTIONS</b> FOR RECYCLING & WASTE MANAGEMENT</b>
                     <br /><br />
                     <b>Experience meets with the High Tech Solutions to bring new generation</b>
                 </Grid.Col>
-                <Grid.Col span={12} sm={7}>3D City</Grid.Col>
+                <Grid.Col span={12} sm={6}>
+                    {matches && <img width="100%" alt="city" src={city} />}
+                </Grid.Col>
             </Grid>
         </>
     );
