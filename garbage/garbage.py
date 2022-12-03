@@ -75,9 +75,9 @@ while True:
 
     if confidence_score > THRESH :
         if class_name == METAL:
-            conf_leds = [0, 1, 1, 1, 1]
+            conf_leds = [LOW, HIGH, HIGH, HIGH, HIGH]
         elif class_name == PLASTIC:
-            conf_leds = [1, 0, 0, 0, 0]
+            conf_leds = [HIGH, LOW, HIGH, HIGH, HIGH]
         elif class_name == PAPER :
             conf_leds = [HIGH, HIGH, LOW, HIGH, HIGH]
         elif class_name == GLASS :
