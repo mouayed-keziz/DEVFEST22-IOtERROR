@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import { VRButton, ARButton, XR, Controllers, Hands } from '@react-three/xr'
+import { Canvas, useThree } from '@react-three/fiber'
+import VrSimulation from "./VrSimulation"
+import { OrbitControls, Sky, Stats } from '@react-three/drei'
+import { useEffect } from 'react'
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <VRButton />
+      <Canvas shadows style={{ height: "100vh" }}>
+        <XR>
+        <fog attach="fog" args={["white", 0, 40]} />
+        <Sky/>
+          <ambientLight intensity={0.5} />
+          <pointLight position={[0, 10, 0]} castShadow shadow-mapSize-width={2048} shadow-mapSize-height={2048} />
+          <Controllers />
+          <Hands />
+          <VrSimulation/>
+        </XR>
+        <Stats/>
+        <OrbitControls/>
+      </Canvas>
+    </>
+  )
 }
 
-export default App;
