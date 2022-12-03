@@ -460,7 +460,8 @@ export default function VrSimulation(props) {
         />
       </group>
       <group position={[65.17, 0.27, 8.34]}>
-        <mesh
+        <e.mesh
+          theatreKey="mesh-1"
           
           geometry={nodes.Cube028.geometry}
           material={materials.handelblack}
@@ -513,7 +514,8 @@ export default function VrSimulation(props) {
         />
       </group>
       <group position={[70.96, 0.27, 7.81]}>
-        <mesh
+        <e.mesh
+               theatreKey="mesh-2"
           geometry={nodes.Cube054.geometry}
           material={materials.handelblack}
         />
@@ -551,7 +553,7 @@ export default function VrSimulation(props) {
         />
       </group>
       <group position={[68.76, 0.27, 8.34]}>
-        <mesh
+        <e.mesh
           theatreKey="mesh-3"
           
           geometry={nodes.Cube055.geometry}
