@@ -1,5 +1,4 @@
 # DEVFEST22-IOtERROR
-DEVFEST22-IOtERROR project
 
 ## The aim of using each model :
 ### `Garbage classifier`
