@@ -16,3 +16,6 @@ Time series model forecasting, based on previous statistics, the number of pedes
 
 ### `Car tracking`
 It intervenes in **Automated parking** future project. It detects the vehicle and it's immatriculation number.
+
+## Running scripts
+The scripts are written on `python3.8.x`. Each model is associated with it's running script ```script.bat ```. All you have to do is to open it.
