@@ -1,2 +1,0 @@
-# DEVFEST22 - `IOtERROR`
-
