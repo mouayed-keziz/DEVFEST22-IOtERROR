@@ -41,7 +41,7 @@ export default function SecondSection() {
                 <Grid.Col span={12} sm={5}>
                 <Canvas style={{backgroundColor:"green", height:"300px"}}>
                     <ambientLight intensity={0.1} />
-                    <directionalLight color="red" position={[0, 0, 5]} />
+                    <directionalLight color="blue" position={[0, 0, 5]} />
                     <mesh>
                         <boxGeometry />
                         <meshStandardMaterial />
