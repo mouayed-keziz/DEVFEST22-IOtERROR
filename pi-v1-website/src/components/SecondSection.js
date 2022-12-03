@@ -1,5 +1,6 @@
 import { createStyles, Grid } from "@mantine/core";
 import { Canvas } from '@react-three/fiber'
+import Prototype1 from "../3Dprototypes/Protoype1";
 
 const useStyles = createStyles((theme) => ({
     outlinedText: {
@@ -39,13 +40,10 @@ export default function SecondSection() {
                 </p>
                 </Grid.Col>
                 <Grid.Col span={12} sm={5}>
-                <Canvas style={{backgroundColor:"green", height:"300px"}}>
+                <Canvas camera={{position:[0,0,-3]}} style={{backgroundColor:"green", height:"300px"}}>
                     <ambientLight intensity={0.1} />
-                    <directionalLight color="blue" position={[0, 0, 5]} />
-                    <mesh>
-                        <boxGeometry />
-                        <meshStandardMaterial />
-                    </mesh>
+                    <pointLight  position={[0, 5, 5]} />
+                    <Prototype1/>
                 </Canvas>
                 </Grid.Col>
             </Grid>
